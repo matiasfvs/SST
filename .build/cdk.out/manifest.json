@@ -1,0 +1,458 @@
+{
+  "version": "20.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "mvalenzuela-notes-StorageStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "mvalenzuela-notes-StorageStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "mvalenzuela-notes-StorageStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://626192391851/us-east-1",
+      "properties": {
+        "templateFile": "mvalenzuela-notes-StorageStack.template.json",
+        "tags": {
+          "sst:app": "notes",
+          "sst:stage": "mvalenzuela"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-deploy-role-626192391851-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-cfn-exec-role-626192391851-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/3e0b91744e7acc6b10eb3ad521ca9f4d1c07f4bc2415d6e561532439eb56b00e.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "mvalenzuela-notes-StorageStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-lookup-role-626192391851-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "mvalenzuela-notes-StorageStack.assets"
+      ],
+      "metadata": {
+        "/mvalenzuela-notes-StorageStack": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "notes"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "mvalenzuela"
+              }
+            ]
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/MetadataUploaderFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleA1374F8D"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/MetadataUploaderFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleDefaultPolicy0BB97BA6"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/MetadataUploaderFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunction91295317"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/MetadataUploader/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploader"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/Uploads/Bucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UploadsBucketC4B27CC7"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/Notes/Table": [
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "NotesTable7100B0E8"
+            }
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/Notes/Table/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NotesTable7100B0E8"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/Exports/Output{\"Fn::GetAtt\":[\"NotesTable7100B0E8\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/Exports/Output{\"Ref\":\"NotesTable7100B0E8\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefNotesTable7100B0E8C879CB95"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/mvalenzuela-notes-StorageStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "mvalenzuela-notes-StorageStack"
+    },
+    "mvalenzuela-notes-ApiStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "mvalenzuela-notes-ApiStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "mvalenzuela-notes-ApiStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://626192391851/us-east-1",
+      "properties": {
+        "templateFile": "mvalenzuela-notes-ApiStack.template.json",
+        "tags": {
+          "sst:app": "notes",
+          "sst:stage": "mvalenzuela"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-deploy-role-626192391851-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-cfn-exec-role-626192391851-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/b5f8793fc590327cf714a1cc059362b73ffb4edffc6ae420a4a150062f694d1a.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "mvalenzuela-notes-ApiStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-lookup-role-626192391851-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "mvalenzuela-notes-StorageStack",
+        "mvalenzuela-notes-ApiStack.assets"
+      ],
+      "metadata": {
+        "/mvalenzuela-notes-ApiStack": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "notes"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "mvalenzuela"
+              }
+            ]
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/MetadataUploaderFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleA1374F8D"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/MetadataUploaderFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleDefaultPolicy0BB97BA6"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/MetadataUploaderFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunction91295317"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/MetadataUploader/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploader"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiCD79AAA0"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Api/DefaultStage/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiDefaultStage1AAE989B"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/LogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLogGroup1717FE17"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_POST_--notes/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPOSTnotesServiceRoleD16681D3"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_POST_--notes/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPOSTnotesServiceRoleDefaultPolicy6D85CF6B"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_POST_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPOSTnotes3B067E1B"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_POST_--notes/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPOSTnotesEventInvokeConfig78ADA2E8"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_POST_--notes/Integration_POST_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePOSTnotesIntegrationPOSTnotes44F9E77C"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_POST_--notes/Integration_POST_--notes-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePOSTnotesIntegrationPOSTnotesPermission83B10601"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_POST_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePOSTnotes66667A1D"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes--{id}/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesidServiceRole5ED71CA8"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes--{id}/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesidServiceRoleDefaultPolicy0BDDFC9B"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesidBDFD7F2C"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes--{id}/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesidEventInvokeConfig638AD083"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes--{id}/Integration_GET_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesidIntegrationGETnotesidDDEC4C94"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes--{id}/Integration_GET_--notes--{id}-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesidIntegrationGETnotesidPermissionC332DC73"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesid7B39CB5A"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesServiceRoleFAD2F768"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesServiceRoleDefaultPolicy46521967"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesA3E56CF7"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_GET_--notes/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaGETnotesEventInvokeConfigE155863D"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes/Integration_GET_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesIntegrationGETnotes809882CF"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes/Integration_GET_--notes-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesIntegrationGETnotesPermissionA18F8817"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_GET_--notes/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteGETnotesBFEE3C9D"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_PUT_--notes--{id}/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPUTnotesidServiceRole7A962796"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_PUT_--notes--{id}/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPUTnotesidServiceRoleDefaultPolicyB3FF9AED"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_PUT_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPUTnotesid28D10C39"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_PUT_--notes--{id}/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaPUTnotesidEventInvokeConfig80B67243"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_PUT_--notes--{id}/Integration_PUT_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePUTnotesidIntegrationPUTnotesid0B48B9D7"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_PUT_--notes--{id}/Integration_PUT_--notes--{id}-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePUTnotesidIntegrationPUTnotesidPermissionDD71990C"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_PUT_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRoutePUTnotesidFAE087B0"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_DELETE_--notes--{id}/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaDELETEnotesidServiceRole196EBA58"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_DELETE_--notes--{id}/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaDELETEnotesidServiceRoleDefaultPolicy451F8A74"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_DELETE_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaDELETEnotesid69A96EAD"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Lambda_DELETE_--notes--{id}/EventInvokeConfig/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiLambdaDELETEnotesidEventInvokeConfigC7520EFE"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_DELETE_--notes--{id}/Integration_DELETE_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteDELETEnotesidIntegrationDELETEnotesidE2F04DD5"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_DELETE_--notes--{id}/Integration_DELETE_--notes--{id}-Permission": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteDELETEnotesidIntegrationDELETEnotesidPermission717CBC89"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/Api/Route_DELETE_--notes--{id}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiRouteDELETEnotesidCFA3191E"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/ApiEndpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiEndpoint"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/mvalenzuela-notes-ApiStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "mvalenzuela-notes-ApiStack"
+    }
+  }
+}

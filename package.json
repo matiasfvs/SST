@@ -1,0 +1,35 @@
+{
+  "name": "notes",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "sst start",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@serverless-stack/cli": "^1.8.4",
+    "@serverless-stack/resources": "^1.8.4",
+    "@tsconfig/node16": "^1.0.3",
+    "@types/dynamodb": "^1.3.2",
+    "@types/uuid": "^8.3.4",
+    "aws-cdk-lib": "2.32.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.22.1"
+  },
+  "workspaces": [
+    "services"
+  ],
+  "dependencies": {
+    "@types/serve-handler": "^6.1.1",
+    "aws-sdk": "^2.1200.0",
+    "dynamodb": "^1.3.0",
+    "handler": "^0.1.3",
+    "typescript-handler": "^0.1.1",
+    "uuid": "^8.3.2"
+  }
+}
