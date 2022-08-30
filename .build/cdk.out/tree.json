@@ -351,6 +351,14 @@
                   "fqn": "aws-cdk-lib.CfnOutput",
                   "version": "2.32.0"
                 }
+              },
+              "Output{\"Fn::GetAtt\":[\"UploadsBucketC4B27CC7\",\"Arn\"]}": {
+                "id": "Output{\"Fn::GetAtt\":[\"UploadsBucketC4B27CC7\",\"Arn\"]}",
+                "path": "mvalenzuela-notes-StorageStack/Exports/Output{\"Fn::GetAtt\":[\"UploadsBucketC4B27CC7\",\"Arn\"]}",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.32.0"
+                }
               }
             },
             "constructInfo": {
@@ -1032,7 +1040,7 @@
                           "Ref": "ApiCD79AAA0"
                         },
                         "routeKey": "POST /notes",
-                        "authorizationType": "NONE",
+                        "authorizationType": "AWS_IAM",
                         "target": {
                           "Fn::Join": [
                             "",
@@ -1394,7 +1402,7 @@
                           "Ref": "ApiCD79AAA0"
                         },
                         "routeKey": "GET /notes/{id}",
-                        "authorizationType": "NONE",
+                        "authorizationType": "AWS_IAM",
                         "target": {
                           "Fn::Join": [
                             "",
@@ -1756,7 +1764,7 @@
                           "Ref": "ApiCD79AAA0"
                         },
                         "routeKey": "GET /notes",
-                        "authorizationType": "NONE",
+                        "authorizationType": "AWS_IAM",
                         "target": {
                           "Fn::Join": [
                             "",
@@ -2118,7 +2126,7 @@
                           "Ref": "ApiCD79AAA0"
                         },
                         "routeKey": "PUT /notes/{id}",
-                        "authorizationType": "NONE",
+                        "authorizationType": "AWS_IAM",
                         "target": {
                           "Fn::Join": [
                             "",
@@ -2480,7 +2488,7 @@
                           "Ref": "ApiCD79AAA0"
                         },
                         "routeKey": "DELETE /notes/{id}",
-                        "authorizationType": "NONE",
+                        "authorizationType": "AWS_IAM",
                         "target": {
                           "Fn::Join": [
                             "",
@@ -2514,6 +2522,673 @@
           "ApiEndpoint": {
             "id": "ApiEndpoint",
             "path": "mvalenzuela-notes-ApiStack/ApiEndpoint",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.32.0"
+            }
+          },
+          "Exports": {
+            "id": "Exports",
+            "path": "mvalenzuela-notes-ApiStack/Exports",
+            "children": {
+              "Output{\"Ref\":\"ApiCD79AAA0\"}": {
+                "id": "Output{\"Ref\":\"ApiCD79AAA0\"}",
+                "path": "mvalenzuela-notes-ApiStack/Exports/Output{\"Ref\":\"ApiCD79AAA0\"}",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnOutput",
+                  "version": "2.32.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.1.83"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "aws-cdk-lib.Stack",
+          "version": "2.32.0"
+        }
+      },
+      "mvalenzuela-notes-AuthStack": {
+        "id": "mvalenzuela-notes-AuthStack",
+        "path": "mvalenzuela-notes-AuthStack",
+        "children": {
+          "MetadataUploaderFunction": {
+            "id": "MetadataUploaderFunction",
+            "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction",
+            "children": {
+              "ServiceRole": {
+                "id": "ServiceRole",
+                "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "lambda.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                              ]
+                            ]
+                          }
+                        ],
+                        "tags": [
+                          {
+                            "key": "sst:app",
+                            "value": "notes"
+                          },
+                          {
+                            "key": "sst:stage",
+                            "value": "mvalenzuela"
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                      "version": "2.32.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "s3:PutObject",
+                                    "s3:DeleteObject"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "arn:aws:s3:::sstbootstrap-useast124d14e4b-26o6rlaxtw2x/*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "MetadataUploaderFunctionServiceRoleDefaultPolicy0BB97BA6",
+                            "roles": [
+                              {
+                                "Ref": "MetadataUploaderFunctionServiceRoleA1374F8D"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                          "version": "2.32.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Policy",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_iam.Role",
+                  "version": "2.32.0"
+                }
+              },
+              "Code": {
+                "id": "Code",
+                "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/Code",
+                "children": {
+                  "Stage": {
+                    "id": "Stage",
+                    "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/Code/Stage",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.AssetStaging",
+                      "version": "2.32.0"
+                    }
+                  },
+                  "AssetBucket": {
+                    "id": "AssetBucket",
+                    "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/Code/AssetBucket",
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_s3.BucketBase",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_s3_assets.Asset",
+                  "version": "2.32.0"
+                }
+              },
+              "Resource": {
+                "id": "Resource",
+                "path": "mvalenzuela-notes-AuthStack/MetadataUploaderFunction/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                  "aws:cdk:cloudformation:props": {
+                    "code": {
+                      "s3Bucket": "cdk-hnb659fds-assets-626192391851-us-east-1",
+                      "s3Key": "7daa98c13c8356e3e2ffbcc6fb04fbc81645c131274597293472dd5d2cce4dc5.zip"
+                    },
+                    "role": {
+                      "Fn::GetAtt": [
+                        "MetadataUploaderFunctionServiceRoleA1374F8D",
+                        "Arn"
+                      ]
+                    },
+                    "environment": {
+                      "variables": {
+                        "BUCKET_NAME": "sstbootstrap-useast124d14e4b-26o6rlaxtw2x"
+                      }
+                    },
+                    "handler": "stack-metadata.handler",
+                    "memorySize": 1024,
+                    "runtime": "nodejs16.x",
+                    "tags": [
+                      {
+                        "key": "sst:app",
+                        "value": "notes"
+                      },
+                      {
+                        "key": "sst:stage",
+                        "value": "mvalenzuela"
+                      }
+                    ],
+                    "timeout": 900
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_lambda.CfnFunction",
+                  "version": "2.32.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_lambda.Function",
+              "version": "2.32.0"
+            }
+          },
+          "MetadataUploader": {
+            "id": "MetadataUploader",
+            "path": "mvalenzuela-notes-AuthStack/MetadataUploader",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "mvalenzuela-notes-AuthStack/MetadataUploader/Default",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnResource",
+                  "version": "2.32.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CustomResource",
+              "version": "2.32.0"
+            }
+          },
+          "Auth": {
+            "id": "Auth",
+            "path": "mvalenzuela-notes-AuthStack/Auth",
+            "children": {
+              "UserPool": {
+                "id": "UserPool",
+                "path": "mvalenzuela-notes-AuthStack/Auth/UserPool",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/UserPool/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
+                      "aws:cdk:cloudformation:props": {
+                        "accountRecoverySetting": {
+                          "recoveryMechanisms": [
+                            {
+                              "name": "verified_phone_number",
+                              "priority": 1
+                            },
+                            {
+                              "name": "verified_email",
+                              "priority": 2
+                            }
+                          ]
+                        },
+                        "adminCreateUserConfig": {
+                          "allowAdminCreateUserOnly": false
+                        },
+                        "autoVerifiedAttributes": [
+                          "email"
+                        ],
+                        "emailVerificationMessage": "The verification code to your new account is {####}",
+                        "emailVerificationSubject": "Verify your new account",
+                        "smsVerificationMessage": "The verification code to your new account is {####}",
+                        "usernameAttributes": [
+                          "email"
+                        ],
+                        "usernameConfiguration": {
+                          "caseSensitive": false
+                        },
+                        "userPoolName": "mvalenzuela-notes-Auth",
+                        "userPoolTags": {
+                          "sst:app": "notes",
+                          "sst:stage": "mvalenzuela"
+                        },
+                        "verificationMessageTemplate": {
+                          "defaultEmailOption": "CONFIRM_WITH_CODE",
+                          "emailMessage": "The verification code to your new account is {####}",
+                          "emailSubject": "Verify your new account",
+                          "smsMessage": "The verification code to your new account is {####}"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_cognito.CfnUserPool",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_cognito.UserPool",
+                  "version": "2.32.0"
+                }
+              },
+              "UserPoolClient": {
+                "id": "UserPoolClient",
+                "path": "mvalenzuela-notes-AuthStack/Auth/UserPoolClient",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/UserPoolClient/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
+                      "aws:cdk:cloudformation:props": {
+                        "userPoolId": {
+                          "Ref": "AuthUserPool8115E87F"
+                        },
+                        "allowedOAuthFlows": [
+                          "implicit",
+                          "code"
+                        ],
+                        "allowedOAuthFlowsUserPoolClient": true,
+                        "allowedOAuthScopes": [
+                          "profile",
+                          "phone",
+                          "email",
+                          "openid",
+                          "aws.cognito.signin.user.admin"
+                        ],
+                        "callbackUrLs": [
+                          "https://example.com"
+                        ],
+                        "supportedIdentityProviders": [
+                          "COGNITO"
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_cognito.CfnUserPoolClient",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_cognito.UserPoolClient",
+                  "version": "2.32.0"
+                }
+              },
+              "IdentityPool": {
+                "id": "IdentityPool",
+                "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPool",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Cognito::IdentityPool",
+                  "aws:cdk:cloudformation:props": {
+                    "allowUnauthenticatedIdentities": true,
+                    "cognitoIdentityProviders": [
+                      {
+                        "providerName": {
+                          "Fn::Join": [
+                            "",
+                            [
+                              "cognito-idp.us-east-1.",
+                              {
+                                "Ref": "AWS::URLSuffix"
+                              },
+                              "/",
+                              {
+                                "Ref": "AuthUserPool8115E87F"
+                              }
+                            ]
+                          ]
+                        },
+                        "clientId": {
+                          "Ref": "AuthUserPoolClient0AA456E4"
+                        }
+                      }
+                    ],
+                    "identityPoolName": "mvalenzuela-notes-Auth",
+                    "openIdConnectProviderArns": [],
+                    "supportedLoginProviders": {}
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_cognito.CfnIdentityPool",
+                  "version": "2.32.0"
+                }
+              },
+              "IdentityPoolAuthRole": {
+                "id": "IdentityPoolAuthRole",
+                "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRoleWithWebIdentity",
+                              "Condition": {
+                                "StringEquals": {
+                                  "cognito-identity.amazonaws.com:aud": {
+                                    "Ref": "AuthIdentityPool12DFB5E1"
+                                  }
+                                },
+                                "ForAnyValue:StringLike": {
+                                  "cognito-identity.amazonaws.com:amr": "authenticated"
+                                }
+                              },
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Federated": "cognito-identity.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "tags": [
+                          {
+                            "key": "sst:app",
+                            "value": "notes"
+                          },
+                          {
+                            "key": "sst:stage",
+                            "value": "mvalenzuela"
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                      "version": "2.32.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "mobileanalytics:PutEvents",
+                                    "cognito-sync:*",
+                                    "cognito-identity:*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                },
+                                {
+                                  "Action": "execute-api:Invoke",
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Fn::Join": [
+                                      "",
+                                      [
+                                        "arn:aws:execute-api:us-east-1:626192391851:",
+                                        {
+                                          "Fn::ImportValue": "mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18"
+                                        },
+                                        "/*"
+                                      ]
+                                    ]
+                                  }
+                                },
+                                {
+                                  "Action": "s3:*",
+                                  "Effect": "Allow",
+                                  "Resource": {
+                                    "Fn::Join": [
+                                      "",
+                                      [
+                                        {
+                                          "Fn::ImportValue": "mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45"
+                                        },
+                                        "/private/${cognito-identity.amazonaws.com:sub}/*"
+                                      ]
+                                    ]
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "AuthIdentityPoolAuthRoleDefaultPolicy32D17CAC",
+                            "roles": [
+                              {
+                                "Ref": "AuthIdentityPoolAuthRoleD14DA003"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                          "version": "2.32.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Policy",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_iam.Role",
+                  "version": "2.32.0"
+                }
+              },
+              "IdentityPoolUnauthRole": {
+                "id": "IdentityPoolUnauthRole",
+                "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRoleWithWebIdentity",
+                              "Condition": {
+                                "StringEquals": {
+                                  "cognito-identity.amazonaws.com:aud": {
+                                    "Ref": "AuthIdentityPool12DFB5E1"
+                                  }
+                                },
+                                "ForAnyValue:StringLike": {
+                                  "cognito-identity.amazonaws.com:amr": "unauthenticated"
+                                }
+                              },
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Federated": "cognito-identity.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "tags": [
+                          {
+                            "key": "sst:app",
+                            "value": "notes"
+                          },
+                          {
+                            "key": "sst:stage",
+                            "value": "mvalenzuela"
+                          }
+                        ]
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.CfnRole",
+                      "version": "2.32.0"
+                    }
+                  },
+                  "DefaultPolicy": {
+                    "id": "DefaultPolicy",
+                    "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole/DefaultPolicy",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole/DefaultPolicy/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                          "aws:cdk:cloudformation:props": {
+                            "policyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": [
+                                    "mobileanalytics:PutEvents",
+                                    "cognito-sync:*"
+                                  ],
+                                  "Effect": "Allow",
+                                  "Resource": "*"
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "policyName": "AuthIdentityPoolUnauthRoleDefaultPolicy0417F857",
+                            "roles": [
+                              {
+                                "Ref": "AuthIdentityPoolUnauthRoleA8DE48F3"
+                              }
+                            ]
+                          }
+                        },
+                        "constructInfo": {
+                          "fqn": "aws-cdk-lib.aws_iam.CfnPolicy",
+                          "version": "2.32.0"
+                        }
+                      }
+                    },
+                    "constructInfo": {
+                      "fqn": "aws-cdk-lib.aws_iam.Policy",
+                      "version": "2.32.0"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_iam.Role",
+                  "version": "2.32.0"
+                }
+              },
+              "IdentityPoolRoleAttachment": {
+                "id": "IdentityPoolRoleAttachment",
+                "path": "mvalenzuela-notes-AuthStack/Auth/IdentityPoolRoleAttachment",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::Cognito::IdentityPoolRoleAttachment",
+                  "aws:cdk:cloudformation:props": {
+                    "identityPoolId": {
+                      "Ref": "AuthIdentityPool12DFB5E1"
+                    },
+                    "roles": {
+                      "authenticated": {
+                        "Fn::GetAtt": [
+                          "AuthIdentityPoolAuthRoleD14DA003",
+                          "Arn"
+                        ]
+                      },
+                      "unauthenticated": {
+                        "Fn::GetAtt": [
+                          "AuthIdentityPoolUnauthRoleA8DE48F3",
+                          "Arn"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_cognito.CfnIdentityPoolRoleAttachment",
+                  "version": "2.32.0"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.1.83"
+            }
+          },
+          "Region": {
+            "id": "Region",
+            "path": "mvalenzuela-notes-AuthStack/Region",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.32.0"
+            }
+          },
+          "UserPoolId": {
+            "id": "UserPoolId",
+            "path": "mvalenzuela-notes-AuthStack/UserPoolId",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.32.0"
+            }
+          },
+          "IdentityPoolId": {
+            "id": "IdentityPoolId",
+            "path": "mvalenzuela-notes-AuthStack/IdentityPoolId",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnOutput",
+              "version": "2.32.0"
+            }
+          },
+          "UserPoolClientId": {
+            "id": "UserPoolClientId",
+            "path": "mvalenzuela-notes-AuthStack/UserPoolClientId",
             "constructInfo": {
               "fqn": "aws-cdk-lib.CfnOutput",
               "version": "2.32.0"

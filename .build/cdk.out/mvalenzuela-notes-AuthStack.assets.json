@@ -15,29 +15,15 @@
         }
       }
     },
-    "c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0": {
+    "31a97c893f82636a484b851db466b6d62c3ebf8295b0c7791cf0e078512a1fb7": {
       "source": {
-        "path": "asset.c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip",
+        "path": "mvalenzuela-notes-AuthStack.template.json",
         "packaging": "file"
       },
       "destinations": {
         "626192391851-us-east-1": {
           "bucketName": "cdk-hnb659fds-assets-626192391851-us-east-1",
-          "objectKey": "c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip",
-          "region": "us-east-1",
-          "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-file-publishing-role-626192391851-us-east-1"
-        }
-      }
-    },
-    "b85acfb98b4b28757ee29c09cfb17b33ef30707642552cef02dc2352eb4e33df": {
-      "source": {
-        "path": "mvalenzuela-notes-ApiStack.template.json",
-        "packaging": "file"
-      },
-      "destinations": {
-        "626192391851-us-east-1": {
-          "bucketName": "cdk-hnb659fds-assets-626192391851-us-east-1",
-          "objectKey": "b85acfb98b4b28757ee29c09cfb17b33ef30707642552cef02dc2352eb4e33df.json",
+          "objectKey": "31a97c893f82636a484b851db466b6d62c3ebf8295b0c7791cf0e078512a1fb7.json",
           "region": "us-east-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-file-publishing-role-626192391851-us-east-1"
         }

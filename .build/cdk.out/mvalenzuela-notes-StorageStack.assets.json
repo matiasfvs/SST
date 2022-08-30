@@ -15,7 +15,7 @@
         }
       }
     },
-    "3e0b91744e7acc6b10eb3ad521ca9f4d1c07f4bc2415d6e561532439eb56b00e": {
+    "4c1b24027a6e5a6cf4067dcadd0753cf168b79fc36a81095325fe62a70563d1a": {
       "source": {
         "path": "mvalenzuela-notes-StorageStack.template.json",
         "packaging": "file"
@@ -23,7 +23,7 @@
       "destinations": {
         "626192391851-us-east-1": {
           "bucketName": "cdk-hnb659fds-assets-626192391851-us-east-1",
-          "objectKey": "3e0b91744e7acc6b10eb3ad521ca9f4d1c07f4bc2415d6e561532439eb56b00e.json",
+          "objectKey": "4c1b24027a6e5a6cf4067dcadd0753cf168b79fc36a81095325fe62a70563d1a.json",
           "region": "us-east-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-file-publishing-role-626192391851-us-east-1"
         }

@@ -27,6 +27,7 @@ function ApiStack({ stack, app }) {
   const { table } = use(StorageStack);
   const api = new Api(stack, "Api", {
     defaults: {
+      authorizer: "iam",
       function: {
         permissions: [table],
         environment: {
@@ -51,6 +52,37 @@ function ApiStack({ stack, app }) {
 }
 __name(ApiStack, "ApiStack");
 
+// stacks/AuthStack.ts
+import * as iam from "aws-cdk-lib/aws-iam";
+import { Auth, use as use2 } from "@serverless-stack/resources";
+function AuthStack({ stack, app }) {
+  const { bucket } = use2(StorageStack);
+  const { api } = use2(ApiStack);
+  const auth = new Auth(stack, "Auth", {
+    login: ["email"]
+  });
+  auth.attachPermissionsForAuthUsers(stack, [
+    api,
+    new iam.PolicyStatement({
+      actions: ["s3:*"],
+      effect: iam.Effect.ALLOW,
+      resources: [
+        bucket.bucketArn + "/private/${cognito-identity.amazonaws.com:sub}/*"
+      ]
+    })
+  ]);
+  stack.addOutputs({
+    Region: app.region,
+    UserPoolId: auth.userPoolId,
+    IdentityPoolId: auth.cognitoIdentityPoolId,
+    UserPoolClientId: auth.userPoolClientId
+  });
+  return {
+    auth
+  };
+}
+__name(AuthStack, "AuthStack");
+
 // stacks/index.ts
 function stacks_default(app) {
   app.setDefaultFunctionProps({
@@ -60,7 +92,7 @@ function stacks_default(app) {
       format: "esm"
     }
   });
-  app.stack(StorageStack).stack(ApiStack);
+  app.stack(StorageStack).stack(ApiStack).stack(AuthStack);
 }
 __name(stacks_default, "default");
 export {

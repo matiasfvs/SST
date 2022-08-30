@@ -27,7 +27,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-deploy-role-626192391851-us-east-1",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-cfn-exec-role-626192391851-us-east-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/3e0b91744e7acc6b10eb3ad521ca9f4d1c07f4bc2415d6e561532439eb56b00e.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/4c1b24027a6e5a6cf4067dcadd0753cf168b79fc36a81095325fe62a70563d1a.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -114,6 +114,12 @@
             "data": "ExportsOutputRefNotesTable7100B0E8C879CB95"
           }
         ],
+        "/mvalenzuela-notes-StorageStack/Exports/Output{\"Fn::GetAtt\":[\"UploadsBucketC4B27CC7\",\"Arn\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45"
+          }
+        ],
         "/mvalenzuela-notes-StorageStack/BootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
@@ -149,7 +155,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-deploy-role-626192391851-us-east-1",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-cfn-exec-role-626192391851-us-east-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/b5f8793fc590327cf714a1cc059362b73ffb4edffc6ae420a4a150062f694d1a.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/b85acfb98b4b28757ee29c09cfb17b33ef30707642552cef02dc2352eb4e33df.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -439,6 +445,12 @@
             "data": "ApiEndpoint"
           }
         ],
+        "/mvalenzuela-notes-ApiStack/Exports/Output{\"Ref\":\"ApiCD79AAA0\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefApiCD79AAA0A1504A18"
+          }
+        ],
         "/mvalenzuela-notes-ApiStack/BootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
@@ -453,6 +465,170 @@
         ]
       },
       "displayName": "mvalenzuela-notes-ApiStack"
+    },
+    "mvalenzuela-notes-AuthStack.assets": {
+      "type": "cdk:asset-manifest",
+      "properties": {
+        "file": "mvalenzuela-notes-AuthStack.assets.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+      }
+    },
+    "mvalenzuela-notes-AuthStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://626192391851/us-east-1",
+      "properties": {
+        "templateFile": "mvalenzuela-notes-AuthStack.template.json",
+        "tags": {
+          "sst:app": "notes",
+          "sst:stage": "mvalenzuela"
+        },
+        "validateOnSynth": false,
+        "assumeRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-deploy-role-626192391851-us-east-1",
+        "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-cfn-exec-role-626192391851-us-east-1",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-626192391851-us-east-1/31a97c893f82636a484b851db466b6d62c3ebf8295b0c7791cf0e078512a1fb7.json",
+        "requiresBootstrapStackVersion": 6,
+        "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
+        "additionalDependencies": [
+          "mvalenzuela-notes-AuthStack.assets"
+        ],
+        "lookupRole": {
+          "arn": "arn:${AWS::Partition}:iam::626192391851:role/cdk-hnb659fds-lookup-role-626192391851-us-east-1",
+          "requiresBootstrapStackVersion": 8,
+          "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
+        }
+      },
+      "dependencies": [
+        "mvalenzuela-notes-ApiStack",
+        "mvalenzuela-notes-StorageStack",
+        "mvalenzuela-notes-AuthStack.assets"
+      ],
+      "metadata": {
+        "/mvalenzuela-notes-AuthStack": [
+          {
+            "type": "aws:cdk:stack-tags",
+            "data": [
+              {
+                "Key": "sst:app",
+                "Value": "notes"
+              },
+              {
+                "Key": "sst:stage",
+                "Value": "mvalenzuela"
+              }
+            ]
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleA1374F8D"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/MetadataUploaderFunction/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunctionServiceRoleDefaultPolicy0BB97BA6"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/MetadataUploaderFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploaderFunction91295317"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/MetadataUploader/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MetadataUploader"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthUserPool8115E87F"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/UserPoolClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthUserPoolClient0AA456E4"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPool": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPool12DFB5E1"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPoolAuthRoleD14DA003"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPoolAuthRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPoolAuthRoleDefaultPolicy32D17CAC"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPoolUnauthRoleA8DE48F3"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPoolUnauthRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPoolUnauthRoleDefaultPolicy0417F857"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Auth/IdentityPoolRoleAttachment": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AuthIdentityPoolRoleAttachmentB0D3DC72"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/Region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Region"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/IdentityPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "IdentityPoolId"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/UserPoolClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolClientId"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/BootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BootstrapVersion"
+          }
+        ],
+        "/mvalenzuela-notes-AuthStack/CheckBootstrapVersion": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CheckBootstrapVersion"
+          }
+        ]
+      },
+      "displayName": "mvalenzuela-notes-AuthStack"
     }
   }
 }
