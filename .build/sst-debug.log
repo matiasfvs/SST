@@ -5311,3 +5311,16 @@ Rules:
 }
 [2022-08-31T11:46:16.084] [INFO] client - [90m8cd84d1c-8041-4908-91bb-e4a0064144de RESPONSE {"statusCode":200,"body":"{\"userId\":\"us-east-1:fb27800b-c96f-47ee-971a-7539d5c208b9\",\"noteId\":\"0be7f7e0-2944-11ed-a838-49b0114... 33 more characters"}[39m
 [2022-08-31T11:46:16.086] [DEBUG] runtime - Worker waiting for function mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes
+[2022-08-31T13:34:53.787] [DEBUG] websocket - Websocket connection closed { code: 1001, reason: <Buffer 47 6f 69 6e 67 20 61 77 61 79> }
+[2022-08-31T13:34:53.800] [DEBUG] websocket - Reconnecting to websocket server...
+[2022-08-31T13:34:53.807] [DEBUG] websocket - startWebSocketClient wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+[2022-08-31T13:34:54.740] [DEBUG] websocket - WebSocket connection opened
+[2022-08-31T13:34:55.011] [INFO] client - Debug session started. Listening for requests...
+[2022-08-31T13:34:55.016] [DEBUG] client - Client connection id: XvVFyfycIAMCLqA=
+[2022-08-31T14:44:30.869] [DEBUG] websocket - Websocket connection closed { code: 1006, reason: <Buffer > }
+[2022-08-31T14:44:30.937] [DEBUG] websocket - Reconnecting to websocket server...
+[2022-08-31T14:44:30.938] [DEBUG] websocket - startWebSocketClient wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+[2022-08-31T14:44:32.176] [DEBUG] websocket - WebSocket connection opened
+[2022-08-31T14:44:33.611] [INFO] client - Debug session started. Listening for requests...
+[2022-08-31T14:44:33.612] [DEBUG] client - Client connection id: XvfShfU0oAMCLhg=
+[2022-08-31T15:50:01.923] [DEBUG] default - File changed:  [ '/Users/mvalenzuela/Documents/SST/notes/services/test/cost.test.ts' ]
