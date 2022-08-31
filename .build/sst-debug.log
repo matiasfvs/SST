@@ -1,15 +1,15 @@
-[2022-08-30T11:46:12.527] [DEBUG] default - SST: 1.8.4
-[2022-08-30T11:46:12.530] [DEBUG] default - CDK: 2.32.0
-[2022-08-30T11:46:12.568] [DEBUG] aws-auth - Determining if we're on an EC2 instance.
-[2022-08-30T11:46:12.568] [DEBUG] aws-auth - Does not look like an EC2 instance.
-[2022-08-30T11:46:12.692] [INFO] default - Using stage: mvalenzuela
-[2022-08-30T11:46:12.694] [INFO] default - [90mPreparing your SST app[39m
-[2022-08-30T11:46:13.430] [INFO] default - 
-[2022-08-30T11:46:13.431] [INFO] default - =======================
-[2022-08-30T11:46:13.432] [INFO] default -  Deploying debug stack
-[2022-08-30T11:46:13.433] [INFO] default - =======================
-[2022-08-30T11:46:13.434] [INFO] default - 
-[2022-08-30T11:46:13.435] [DEBUG] default - synth {
+[2022-08-31T11:33:03.688] [DEBUG] default - SST: 1.8.4
+[2022-08-31T11:33:03.691] [DEBUG] default - CDK: 2.32.0
+[2022-08-31T11:33:03.726] [DEBUG] aws-auth - Determining if we're on an EC2 instance.
+[2022-08-31T11:33:03.727] [DEBUG] aws-auth - Does not look like an EC2 instance.
+[2022-08-31T11:33:03.818] [INFO] default - Using stage: mvalenzuela
+[2022-08-31T11:33:03.824] [INFO] default - [90mPreparing your SST app[39m
+[2022-08-31T11:33:04.550] [INFO] default - 
+[2022-08-31T11:33:04.551] [INFO] default - =======================
+[2022-08-31T11:33:04.552] [INFO] default -  Deploying debug stack
+[2022-08-31T11:33:04.552] [INFO] default - =======================
+[2022-08-31T11:33:04.554] [INFO] default - 
+[2022-08-31T11:33:04.555] [DEBUG] default - synth {
   app: 'node bin/index.mjs notes mvalenzuela us-east-1 "/Users/mvalenzuela/Documents/SST/notes"',
   output: 'cdk.out',
   rollback: true,
@@ -17,21 +17,21 @@
   verbose: 0,
   noColor: false
 }
-[2022-08-30T11:46:25.334] [TRACE] cdk - 
+[2022-08-31T11:33:11.418] [TRACE] cdk - 
 
-[2022-08-30T11:46:25.372] [DEBUG] default - checkInReviewBootstrapStacks
-[2022-08-30T11:46:25.372] [DEBUG] default - checkInReviewBootstrapStackInRegion us-east-1
-[2022-08-30T11:46:26.085] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"pending","dependencies":[],"region":"us-east-1","events":[]}]
-[2022-08-30T11:46:26.086] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"pending","dependencies":[],"region":"us-east-1","events":[]}]
-[2022-08-30T11:46:26.088] [DEBUG] default - deploy stack: started mvalenzuela-notes-debug-stack
-[2022-08-30T11:46:26.088] [DEBUG] default - deploy stack: get pre-deploy status
-[2022-08-30T11:46:26.693] [DEBUG] default - deploy stack: get pre-deploy status: {
+[2022-08-31T11:33:11.461] [DEBUG] default - checkInReviewBootstrapStacks
+[2022-08-31T11:33:11.462] [DEBUG] default - checkInReviewBootstrapStackInRegion us-east-1
+[2022-08-31T11:33:12.076] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"pending","dependencies":[],"region":"us-east-1","events":[]}]
+[2022-08-31T11:33:12.077] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"pending","dependencies":[],"region":"us-east-1","events":[]}]
+[2022-08-31T11:33:12.078] [DEBUG] default - deploy stack: started mvalenzuela-notes-debug-stack
+[2022-08-31T11:33:12.078] [DEBUG] default - deploy stack: get pre-deploy status
+[2022-08-31T11:33:12.679] [DEBUG] default - deploy stack: get pre-deploy status: {
   StackStatus: 'CREATE_COMPLETE',
   LastUpdatedTime: 2022-08-22T14:14:51.334Z
 }
-[2022-08-30T11:46:26.695] [DEBUG] default - deploy stack: addInUseExports
-[2022-08-30T11:46:26.697] [DEBUG] default - deploy stack: isTemplateChanged
-[2022-08-30T11:46:27.551] [DEBUG] default - Resources:
+[2022-08-31T11:33:12.683] [DEBUG] default - deploy stack: addInUseExports
+[2022-08-31T11:33:12.685] [DEBUG] default - deploy stack: isTemplateChanged
+[2022-08-31T11:33:13.850] [DEBUG] default - Resources:
   TableCD117FA1:
     Type: AWS::DynamoDB::Table
     Properties:
@@ -633,7 +633,7 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:27.551] [DEBUG] default - Resources:
+[2022-08-31T11:33:13.851] [DEBUG] default - Resources:
   TableCD117FA1:
     Type: AWS::DynamoDB::Table
     Properties:
@@ -1235,8 +1235,8 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:27.553] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
-[2022-08-30T11:46:27.557] [DEBUG] default - deploy stack: done mvalenzuela-notes-debug-stack {
+[2022-08-31T11:33:13.851] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
+[2022-08-31T11:33:13.852] [DEBUG] default - deploy stack: done mvalenzuela-notes-debug-stack {
   status: 'unchanged',
   statusReason: undefined,
   account: '626192391851',
@@ -1247,12 +1247,12 @@ Rules:
   },
   exports: {}
 }
-[2022-08-30T11:46:27.557] [INFO] default - [32m[39m
+[2022-08-31T11:33:13.852] [INFO] default - [32m[39m
 [32m ✅  mvalenzuela-notes-debug-stack (no changes)[39m
 [32m[39m
-[2022-08-30T11:46:27.559] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
-[2022-08-30T11:46:27.560] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661874387557,"endedAt":1661874387557,"events":[],"outputs":{"BucketArn":"arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5","BucketName":"mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5","Endpoint":"wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela"},"exports":{}}]
-[2022-08-30T11:46:27.561] [DEBUG] default - deployRet [
+[2022-08-31T11:33:13.854] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
+[2022-08-31T11:33:13.855] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-debug-stack","name":"mvalenzuela-notes-debug-stack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661959993852,"endedAt":1661959993852,"events":[],"outputs":{"BucketArn":"arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5","BucketName":"mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5","Endpoint":"wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela"},"exports":{}}]
+[2022-08-31T11:33:13.856] [DEBUG] default - deployRet [
   {
     id: 'mvalenzuela-notes-debug-stack',
     name: 'mvalenzuela-notes-debug-stack',
@@ -1268,12 +1268,12 @@ Rules:
     exports: {}
   }
 ]
-[2022-08-30T11:46:27.562] [INFO] default - 
-[2022-08-30T11:46:27.563] [INFO] default - ===============
-[2022-08-30T11:46:27.563] [INFO] default -  Deploying app
-[2022-08-30T11:46:27.563] [INFO] default - ===============
-[2022-08-30T11:46:27.564] [INFO] default - 
-[2022-08-30T11:46:27.566] [DEBUG] default - synth {
+[2022-08-31T11:33:13.857] [INFO] default - 
+[2022-08-31T11:33:13.858] [INFO] default - ===============
+[2022-08-31T11:33:13.858] [INFO] default -  Deploying app
+[2022-08-31T11:33:13.858] [INFO] default - ===============
+[2022-08-31T11:33:13.859] [INFO] default - 
+[2022-08-31T11:33:13.861] [DEBUG] default - synth {
   app: 'node .build/run.mjs',
   output: '.build/cdk.out',
   rollback: true,
@@ -1281,24 +1281,25 @@ Rules:
   verbose: 0,
   noColor: false
 }
-[2022-08-30T11:46:38.794] [TRACE] cdk - [32mSuccessfully synthesized to [34m/Users/mvalenzuela/Documents/SST/notes/.build/cdk.out[39m[32m[39m
-Supply a stack id ([32mmvalenzuela-notes-StorageStack[39m, [32mmvalenzuela-notes-ApiStack[39m, [32mmvalenzuela-notes-AuthStack[39m) to display its template.
+[2022-08-31T11:33:22.699] [TRACE] cdk - [32mSuccessfully synthesized to [34m/Users/mvalenzuela/Documents/SST/notes/.build/cdk.out[39m[32m[39m
 
-[2022-08-30T11:46:38.814] [TRACE] cdk - 
+[2022-08-31T11:33:22.700] [TRACE] cdk - Supply a stack id ([32mmvalenzuela-notes-StorageStack[39m, [32mmvalenzuela-notes-ApiStack[39m, [32mmvalenzuela-notes-AuthStack[39m) to display its template.
 
-[2022-08-30T11:46:38.856] [DEBUG] default - checkInReviewBootstrapStacks
-[2022-08-30T11:46:38.856] [DEBUG] default - checkInReviewBootstrapStackInRegion us-east-1
-[2022-08-30T11:46:39.611] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"pending","dependencies":[],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"pending","dependencies":["mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
-[2022-08-30T11:46:39.612] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"pending","dependencies":[],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"pending","dependencies":["mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
-[2022-08-30T11:46:39.614] [DEBUG] default - deploy stack: started mvalenzuela-notes-StorageStack
-[2022-08-30T11:46:39.614] [DEBUG] default - deploy stack: get pre-deploy status
-[2022-08-30T11:46:40.330] [DEBUG] default - deploy stack: get pre-deploy status: {
+[2022-08-31T11:33:22.721] [TRACE] cdk - 
+
+[2022-08-31T11:33:23.043] [DEBUG] default - checkInReviewBootstrapStacks
+[2022-08-31T11:33:23.043] [DEBUG] default - checkInReviewBootstrapStackInRegion us-east-1
+[2022-08-31T11:33:23.611] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"pending","dependencies":[],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"pending","dependencies":["mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:33:23.611] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"pending","dependencies":[],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"pending","dependencies":["mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:33:23.612] [DEBUG] default - deploy stack: started mvalenzuela-notes-StorageStack
+[2022-08-31T11:33:23.613] [DEBUG] default - deploy stack: get pre-deploy status
+[2022-08-31T11:33:24.226] [DEBUG] default - deploy stack: get pre-deploy status: {
   StackStatus: 'UPDATE_COMPLETE',
   LastUpdatedTime: 2022-08-30T15:05:17.591Z
 }
-[2022-08-30T11:46:40.332] [DEBUG] default - deploy stack: addInUseExports
-[2022-08-30T11:46:40.334] [DEBUG] default - deploy stack: isTemplateChanged
-[2022-08-30T11:46:40.925] [DEBUG] default - Resources:
+[2022-08-31T11:33:24.227] [DEBUG] default - deploy stack: addInUseExports
+[2022-08-31T11:33:24.230] [DEBUG] default - deploy stack: isTemplateChanged
+[2022-08-31T11:33:24.818] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -1486,7 +1487,7 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:40.927] [DEBUG] default - Resources:
+[2022-08-31T11:33:24.819] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -1674,8 +1675,8 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:40.927] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
-[2022-08-30T11:46:40.928] [DEBUG] default - deploy stack: done mvalenzuela-notes-StorageStack {
+[2022-08-31T11:33:24.820] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
+[2022-08-31T11:33:24.820] [DEBUG] default - deploy stack: done mvalenzuela-notes-StorageStack {
   status: 'unchanged',
   statusReason: undefined,
   account: '626192391851',
@@ -1690,19 +1691,19 @@ Rules:
     'mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95': 'mvalenzuela-notes-Notes'
   }
 }
-[2022-08-30T11:46:40.929] [INFO] default - [32m[39m
+[2022-08-31T11:33:24.821] [INFO] default - [32m[39m
 [32m ✅  mvalenzuela-notes-StorageStack (no changes)[39m
 [32m[39m
-[2022-08-30T11:46:40.930] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
-[2022-08-30T11:46:40.930] [DEBUG] default - deploy stack: started mvalenzuela-notes-ApiStack
-[2022-08-30T11:46:40.931] [DEBUG] default - deploy stack: get pre-deploy status
-[2022-08-30T11:46:41.695] [DEBUG] default - deploy stack: get pre-deploy status: {
+[2022-08-31T11:33:24.822] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
+[2022-08-31T11:33:24.822] [DEBUG] default - deploy stack: started mvalenzuela-notes-ApiStack
+[2022-08-31T11:33:24.823] [DEBUG] default - deploy stack: get pre-deploy status
+[2022-08-31T11:33:25.410] [DEBUG] default - deploy stack: get pre-deploy status: {
   StackStatus: 'UPDATE_COMPLETE',
-  LastUpdatedTime: 2022-08-30T15:06:13.160Z
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
 }
-[2022-08-30T11:46:41.696] [DEBUG] default - deploy stack: addInUseExports
-[2022-08-30T11:46:41.699] [DEBUG] default - deploy stack: isTemplateChanged
-[2022-08-30T11:46:42.825] [DEBUG] default - Resources:
+[2022-08-31T11:33:25.411] [DEBUG] default - deploy stack: addInUseExports
+[2022-08-31T11:33:25.413] [DEBUG] default - deploy stack: isTemplateChanged
+[2022-08-31T11:33:26.615] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -1826,6 +1827,16 @@ Rules:
                 fn:
                   node: c8543b10c816b2bbcec08bf6cb8c2157c8828d0858
                   stack: mvalenzuela-notes-ApiStack
+              - type: function
+                route: POST /billing
+                fn:
+                  node: c8dd275d29fdb24d11ea0744a3344ededc116be0c7
+                  stack: mvalenzuela-notes-ApiStack
+              - type: function
+                route: POST /billingg
+                fn:
+                  node: c8f57f15cf5e4c74c5da4bd8850fd6c80d30cc0cb3
+                  stack: mvalenzuela-notes-ApiStack
         - id: Lambda_POST_--notes
           addr: c8128bf412b2b8ccf4283f79b0f3644431f13edd54
           stack: mvalenzuela-notes-ApiStack
@@ -1879,6 +1890,28 @@ Rules:
             arn:
               Fn::GetAtt:
                 - ApiLambdaDELETEnotesid69A96EAD
+                - Arn
+            secrets: []
+        - id: Lambda_POST_--billing
+          addr: c8dd275d29fdb24d11ea0744a3344ededc116be0c7
+          stack: mvalenzuela-notes-ApiStack
+          type: Function
+          data:
+            localId: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billing
+            arn:
+              Fn::GetAtt:
+                - ApiLambdaPOSTbilling71E49732
+                - Arn
+            secrets: []
+        - id: Lambda_POST_--billingg
+          addr: c8f57f15cf5e4c74c5da4bd8850fd6c80d30cc0cb3
+          stack: mvalenzuela-notes-ApiStack
+          type: Function
+          data:
+            localId: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billingg
+            arn:
+              Fn::GetAtt:
+                - ApiLambdaPOSTbillingg62B8EB1C
                 - Arn
             secrets: []
     UpdateReplacePolicy: Delete
@@ -2011,6 +2044,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/create.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -2173,6 +2208,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/get.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -2334,6 +2371,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/list.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -2496,6 +2535,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/update.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -2658,6 +2699,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/delete.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -2747,6 +2790,334 @@ Rules:
             - Ref: ApiRouteDELETEnotesidIntegrationDELETEnotesidE2F04DD5
     Metadata:
       aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Route_DELETE_--notes--{id}/Resource
+  ApiLambdaPOSTbillingServiceRoleB5827DFF:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+        Version: '2012-10-17'
+      ManagedPolicyArns:
+        - Fn::Join:
+            - ''
+            - - 'arn:'
+              - Ref: AWS::Partition
+              - ':iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/ServiceRole/Resource
+  ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action:
+              - xray:PutTraceSegments
+              - xray:PutTelemetryRecords
+            Effect: Allow
+            Resource: '*'
+          - Action: s3:*
+            Effect: Allow
+            Resource:
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5/*
+          - Action: dynamodb:*
+            Effect: Allow
+            Resource:
+              - Fn::ImportValue: >-
+                  mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+              - Fn::Join:
+                  - ''
+                  - - Fn::ImportValue: >-
+                        mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+                    - /*
+        Version: '2012-10-17'
+      PolicyName: ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694
+      Roles:
+        - Ref: ApiLambdaPOSTbillingServiceRoleB5827DFF
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/ServiceRole/DefaultPolicy/Resource
+  ApiLambdaPOSTbilling71E49732:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        S3Bucket: cdk-hnb659fds-assets-626192391851-us-east-1
+        S3Key: c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      Role:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbillingServiceRoleB5827DFF
+          - Arn
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Fn::ImportValue: >-
+              mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
+          SST_DEBUG_SRC_PATH: services
+          SST_DEBUG_SRC_HANDLER: functions/billing.main
+          SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
+          SST_DEBUG_BUCKET_NAME: mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+          SST_FUNCTION_ID: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billing
+          AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
+          SST_APP: notes
+          SST_STAGE: mvalenzuela
+          SST_DEBUG_IS_API_ROUTE: '1'
+      EphemeralStorage:
+        Size: 512
+      Handler: index.main
+      MemorySize: 1024
+      Runtime: nodejs16.x
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+      Timeout: 10
+      TracingConfig:
+        Mode: Active
+    DependsOn:
+      - ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694
+      - ApiLambdaPOSTbillingServiceRoleB5827DFF
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/Resource
+      aws:asset:path: >-
+        asset.c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      aws:asset:is-bundled: false
+      aws:asset:property: Code
+  ApiLambdaPOSTbillingEventInvokeConfigFF3A6E0D:
+    Type: AWS::Lambda::EventInvokeConfig
+    Properties:
+      FunctionName:
+        Ref: ApiLambdaPOSTbilling71E49732
+      Qualifier: $LATEST
+      MaximumRetryAttempts: 0
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/EventInvokeConfig/Resource
+  ApiRoutePOSTbillingIntegrationPOSTbillingE351CA9B:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      IntegrationType: AWS_PROXY
+      IntegrationUri:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbilling71E49732
+          - Arn
+      PayloadFormatVersion: '2.0'
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Integration_POST_--billing/Resource
+  ApiRoutePOSTbillingIntegrationPOSTbillingPermissionF7A0B32C:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbilling71E49732
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ''
+          - - 'arn:'
+            - Ref: AWS::Partition
+            - ':execute-api:us-east-1:626192391851:'
+            - Ref: ApiCD79AAA0
+            - /*/*/billing
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Integration_POST_--billing-Permission
+  ApiRoutePOSTbilling09AED9DA:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      RouteKey: POST /billing
+      AuthorizationType: AWS_IAM
+      Target:
+        Fn::Join:
+          - ''
+          - - integrations/
+            - Ref: ApiRoutePOSTbillingIntegrationPOSTbillingE351CA9B
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Resource
+  ApiLambdaPOSTbillinggServiceRoleD8530C34:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+        Version: '2012-10-17'
+      ManagedPolicyArns:
+        - Fn::Join:
+            - ''
+            - - 'arn:'
+              - Ref: AWS::Partition
+              - ':iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billingg/ServiceRole/Resource
+  ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action:
+              - xray:PutTraceSegments
+              - xray:PutTelemetryRecords
+            Effect: Allow
+            Resource: '*'
+          - Action: s3:*
+            Effect: Allow
+            Resource:
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5/*
+          - Action: dynamodb:*
+            Effect: Allow
+            Resource:
+              - Fn::ImportValue: >-
+                  mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+              - Fn::Join:
+                  - ''
+                  - - Fn::ImportValue: >-
+                        mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+                    - /*
+        Version: '2012-10-17'
+      PolicyName: ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95
+      Roles:
+        - Ref: ApiLambdaPOSTbillinggServiceRoleD8530C34
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billingg/ServiceRole/DefaultPolicy/Resource
+  ApiLambdaPOSTbillingg62B8EB1C:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        S3Bucket: cdk-hnb659fds-assets-626192391851-us-east-1
+        S3Key: c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      Role:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbillinggServiceRoleD8530C34
+          - Arn
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Fn::ImportValue: >-
+              mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
+          SST_DEBUG_SRC_PATH: services
+          SST_DEBUG_SRC_HANDLER: functions/billing.main
+          SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
+          SST_DEBUG_BUCKET_NAME: mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+          SST_FUNCTION_ID: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billingg
+          AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
+          SST_APP: notes
+          SST_STAGE: mvalenzuela
+          SST_DEBUG_IS_API_ROUTE: '1'
+      EphemeralStorage:
+        Size: 512
+      Handler: index.main
+      MemorySize: 1024
+      Runtime: nodejs16.x
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+      Timeout: 10
+      TracingConfig:
+        Mode: Active
+    DependsOn:
+      - ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95
+      - ApiLambdaPOSTbillinggServiceRoleD8530C34
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billingg/Resource
+      aws:asset:path: >-
+        asset.c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      aws:asset:is-bundled: false
+      aws:asset:property: Code
+  ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF:
+    Type: AWS::Lambda::EventInvokeConfig
+    Properties:
+      FunctionName:
+        Ref: ApiLambdaPOSTbillingg62B8EB1C
+      Qualifier: $LATEST
+      MaximumRetryAttempts: 0
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billingg/EventInvokeConfig/Resource
+  ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      IntegrationType: AWS_PROXY
+      IntegrationUri:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbillingg62B8EB1C
+          - Arn
+      PayloadFormatVersion: '2.0'
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billingg/Integration_POST_--billingg/Resource
+  ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbillingg62B8EB1C
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ''
+          - - 'arn:'
+            - Ref: AWS::Partition
+            - ':execute-api:us-east-1:626192391851:'
+            - Ref: ApiCD79AAA0
+            - /*/*/billingg
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billingg/Integration_POST_--billingg-Permission
+  ApiRoutePOSTbillingg75AD5CDD:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      RouteKey: POST /billingg
+      AuthorizationType: AWS_IAM
+      Target:
+        Fn::Join:
+          - ''
+          - - integrations/
+            - Ref: ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Route_POST_--billingg/Resource
 Outputs:
   ApiEndpoint:
     Value:
@@ -2781,7 +3152,7 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:42.827] [DEBUG] default - Resources:
+[2022-08-31T11:33:26.616] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -2905,6 +3276,11 @@ Rules:
                 fn:
                   node: c8543b10c816b2bbcec08bf6cb8c2157c8828d0858
                   stack: mvalenzuela-notes-ApiStack
+              - type: function
+                route: POST /billing
+                fn:
+                  node: c8dd275d29fdb24d11ea0744a3344ededc116be0c7
+                  stack: mvalenzuela-notes-ApiStack
         - id: Lambda_POST_--notes
           addr: c8128bf412b2b8ccf4283f79b0f3644431f13edd54
           stack: mvalenzuela-notes-ApiStack
@@ -2958,6 +3334,17 @@ Rules:
             arn:
               Fn::GetAtt:
                 - ApiLambdaDELETEnotesid69A96EAD
+                - Arn
+            secrets: []
+        - id: Lambda_POST_--billing
+          addr: c8dd275d29fdb24d11ea0744a3344ededc116be0c7
+          stack: mvalenzuela-notes-ApiStack
+          type: Function
+          data:
+            localId: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billing
+            arn:
+              Fn::GetAtt:
+                - ApiLambdaPOSTbilling71E49732
                 - Arn
             secrets: []
     UpdateReplacePolicy: Delete
@@ -3090,6 +3477,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/create.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -3252,6 +3641,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/get.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -3413,6 +3804,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/list.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -3575,6 +3968,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/update.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -3737,6 +4132,8 @@ Rules:
           TABLE_NAME:
             Fn::ImportValue: >-
               mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
           SST_DEBUG_SRC_PATH: services
           SST_DEBUG_SRC_HANDLER: functions/delete.main
           SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
@@ -3826,6 +4223,170 @@ Rules:
             - Ref: ApiRouteDELETEnotesidIntegrationDELETEnotesidE2F04DD5
     Metadata:
       aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Route_DELETE_--notes--{id}/Resource
+  ApiLambdaPOSTbillingServiceRoleB5827DFF:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Action: sts:AssumeRole
+            Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+        Version: '2012-10-17'
+      ManagedPolicyArns:
+        - Fn::Join:
+            - ''
+            - - 'arn:'
+              - Ref: AWS::Partition
+              - ':iam::aws:policy/service-role/AWSLambdaBasicExecutionRole'
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/ServiceRole/Resource
+  ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694:
+    Type: AWS::IAM::Policy
+    Properties:
+      PolicyDocument:
+        Statement:
+          - Action:
+              - xray:PutTraceSegments
+              - xray:PutTelemetryRecords
+            Effect: Allow
+            Resource: '*'
+          - Action: s3:*
+            Effect: Allow
+            Resource:
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+              - >-
+                arn:aws:s3:::mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5/*
+          - Action: dynamodb:*
+            Effect: Allow
+            Resource:
+              - Fn::ImportValue: >-
+                  mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+              - Fn::Join:
+                  - ''
+                  - - Fn::ImportValue: >-
+                        mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38
+                    - /*
+        Version: '2012-10-17'
+      PolicyName: ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694
+      Roles:
+        - Ref: ApiLambdaPOSTbillingServiceRoleB5827DFF
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/ServiceRole/DefaultPolicy/Resource
+  ApiLambdaPOSTbilling71E49732:
+    Type: AWS::Lambda::Function
+    Properties:
+      Code:
+        S3Bucket: cdk-hnb659fds-assets-626192391851-us-east-1
+        S3Key: c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      Role:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbillingServiceRoleB5827DFF
+          - Arn
+      Environment:
+        Variables:
+          TABLE_NAME:
+            Fn::ImportValue: >-
+              mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95
+          STRIPE_SECRET_KEY: >-
+            sk_test_51LcaDzBSuEKmiKXsTJFzkuhJpgJxgWBDZhFDdQyGZd3bG8gsyRy6n8Hw5xlRhMvuRsh9IWabvrRweaFpi2nnlrSZ00ZpP4I33L
+          SST_DEBUG_SRC_PATH: services
+          SST_DEBUG_SRC_HANDLER: functions/billing.main
+          SST_DEBUG_ENDPOINT: wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela
+          SST_DEBUG_BUCKET_NAME: mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+          SST_FUNCTION_ID: mvalenzuela-notes-ApiStack-Api-Lambda_POST_-billing
+          AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
+          SST_APP: notes
+          SST_STAGE: mvalenzuela
+          SST_DEBUG_IS_API_ROUTE: '1'
+      EphemeralStorage:
+        Size: 512
+      Handler: index.main
+      MemorySize: 1024
+      Runtime: nodejs16.x
+      Tags:
+        - Key: sst:app
+          Value: notes
+        - Key: sst:stage
+          Value: mvalenzuela
+      Timeout: 10
+      TracingConfig:
+        Mode: Active
+    DependsOn:
+      - ApiLambdaPOSTbillingServiceRoleDefaultPolicy23915694
+      - ApiLambdaPOSTbillingServiceRoleB5827DFF
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/Resource
+      aws:asset:path: >-
+        asset.c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0.zip
+      aws:asset:is-bundled: false
+      aws:asset:property: Code
+  ApiLambdaPOSTbillingEventInvokeConfigFF3A6E0D:
+    Type: AWS::Lambda::EventInvokeConfig
+    Properties:
+      FunctionName:
+        Ref: ApiLambdaPOSTbilling71E49732
+      Qualifier: $LATEST
+      MaximumRetryAttempts: 0
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Lambda_POST_--billing/EventInvokeConfig/Resource
+  ApiRoutePOSTbillingIntegrationPOSTbillingE351CA9B:
+    Type: AWS::ApiGatewayV2::Integration
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      IntegrationType: AWS_PROXY
+      IntegrationUri:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbilling71E49732
+          - Arn
+      PayloadFormatVersion: '2.0'
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Integration_POST_--billing/Resource
+  ApiRoutePOSTbillingIntegrationPOSTbillingPermissionF7A0B32C:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      FunctionName:
+        Fn::GetAtt:
+          - ApiLambdaPOSTbilling71E49732
+          - Arn
+      Principal: apigateway.amazonaws.com
+      SourceArn:
+        Fn::Join:
+          - ''
+          - - 'arn:'
+            - Ref: AWS::Partition
+            - ':execute-api:us-east-1:626192391851:'
+            - Ref: ApiCD79AAA0
+            - /*/*/billing
+    Metadata:
+      aws:cdk:path: >-
+        mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Integration_POST_--billing-Permission
+  ApiRoutePOSTbilling09AED9DA:
+    Type: AWS::ApiGatewayV2::Route
+    Properties:
+      ApiId:
+        Ref: ApiCD79AAA0
+      RouteKey: POST /billing
+      AuthorizationType: AWS_IAM
+      Target:
+        Fn::Join:
+          - ''
+          - - integrations/
+            - Ref: ApiRoutePOSTbillingIntegrationPOSTbillingE351CA9B
+    Metadata:
+      aws:cdk:path: mvalenzuela-notes-ApiStack/Api/Route_POST_--billing/Resource
 Outputs:
   ApiEndpoint:
     Value:
@@ -3860,9 +4421,86 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:42.827] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
-[2022-08-30T11:46:42.828] [DEBUG] default - deploy stack: done mvalenzuela-notes-ApiStack {
-  status: 'unchanged',
+[2022-08-31T11:33:26.617] [DEBUG] default - deploy stack: run cdk deploy
+[2022-08-31T11:33:26.624] [DEBUG] default - deploy stack: poll stack status
+[2022-08-31T11:33:27.291] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:27.291] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:28.629] [TRACE] default - deploy stack: run cdk deploy: stderr: 
+✨  Synthesis time: 0.05s
+
+[1mmvalenzuela-notes-ApiStack[22m: deploying...
+
+[2022-08-31T11:33:30.622] [TRACE] default - deploy stack: run cdk deploy: stderr: [0%] start: Publishing 7daa98c13c8356e3e2ffbcc6fb04fbc81645c131274597293472dd5d2cce4dc5:626192391851-us-east-1
+[0%] start: Publishing c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0:626192391851-us-east-1
+[0%] start: Publishing f7cdf97b0737aeea33db54ac755b0d87864a59998029d122d2ff27bae8ba0600:626192391851-us-east-1
+
+[2022-08-31T11:33:30.898] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:30.898] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:32.409] [TRACE] default - deploy stack: run cdk deploy: stderr: [33%] success: Published f7cdf97b0737aeea33db54ac755b0d87864a59998029d122d2ff27bae8ba0600:626192391851-us-east-1
+[66%] success: Published 7daa98c13c8356e3e2ffbcc6fb04fbc81645c131274597293472dd5d2cce4dc5:626192391851-us-east-1
+
+[2022-08-31T11:33:32.410] [TRACE] default - deploy stack: run cdk deploy: stderr: [100%] success: Published c4d49ee2e0b0693f36a5167d120301676cebba16b07df6511ca59c5b9349b7d0:626192391851-us-east-1
+
+[2022-08-31T11:33:34.691] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:34.692] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:34.999] [TRACE] default - deploy stack: run cdk deploy: stderr: [1mmvalenzuela-notes-ApiStack[22m: creating CloudFormation changeset...
+
+[2022-08-31T11:33:38.464] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:38.465] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:42.064] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:42.065] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:45.718] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:45.718] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:49.356] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:49.357] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:52.949] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:52.950] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:33:56.653] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:33:56.655] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:34:00.252] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:34:00.252] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:34:03.958] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_COMPLETE',
+  LastUpdatedTime: 2022-08-30T20:48:18.226Z
+}
+[2022-08-31T11:34:03.958] [DEBUG] default - deploy stack: poll stack status: unknown
+[2022-08-31T11:34:07.699] [DEBUG] default - deploy stack: poll stack status: {
+  StackStatus: 'UPDATE_IN_PROGRESS',
+  LastUpdatedTime: 2022-08-31T15:34:06.162Z
+}
+[2022-08-31T11:34:07.700] [DEBUG] default - deploy stack: poll stack status: cf update started
+[2022-08-31T11:34:07.703] [DEBUG] default - deploy stack: done mvalenzuela-notes-ApiStack {
+  status: 'deploying',
   statusReason: undefined,
   account: '626192391851',
   outputs: {
@@ -3873,19 +4511,67 @@ Rules:
     'mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18': 'zms3re9z32'
   }
 }
-[2022-08-30T11:46:42.828] [INFO] default - [32m[39m
-[32m ✅  mvalenzuela-notes-ApiStack (no changes)[39m
+[2022-08-31T11:34:07.704] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[],"outputs":{"ApiEndpoint":"https://zms3re9z32.execute-api.us-east-1.amazonaws.com","ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"},"exports":{"mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"}},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:07.705] [INFO] default - Checking deploy status...
+[2022-08-31T11:34:07.728] [DEBUG] default - deploy stack: run cdk deploy: exited with code null
+[2022-08-31T11:34:12.708] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[],"outputs":{"ApiEndpoint":"https://zms3re9z32.execute-api.us-east-1.amazonaws.com","ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"},"exports":{"mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"}},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:12.709] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:14.352] [INFO] default - mvalenzuela-notes-ApiStack | [0mUPDATE_IN_PROGRESS[0m | AWS::CloudFormation::Stack | [0m[1mmvalenzuela-notes-ApiStack[22m[0m | [0mUser Initiated[0m
+[2022-08-31T11:34:14.352] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:14.938] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:14.939] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:19.941] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:19.942] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:21.689] [INFO] default - mvalenzuela-notes-ApiStack | [0mUPDATE_IN_PROGRESS[0m | Custom::StackMetadata | [0m[1mMetadataUploader[22m[0m
+[2022-08-31T11:34:21.689] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:22.338] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:22.339] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:27.342] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:27.342] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:30.834] [INFO] default - mvalenzuela-notes-ApiStack | [32mUPDATE_COMPLETE[39m | Custom::StackMetadata | [32m[1mMetadataUploader[22m[39m
+[2022-08-31T11:34:30.835] [INFO] default - mvalenzuela-notes-ApiStack | [32mUPDATE_COMPLETE_CLEANUP_IN_PROGRESS[39m | AWS::CloudFormation::Stack | [32m[1mmvalenzuela-notes-ApiStack[22m[39m
+[2022-08-31T11:34:30.836] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::Lambda::Permission | [0m[1mApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47[22m[0m
+[2022-08-31T11:34:30.837] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::Lambda::EventInvokeConfig | [0m[1mApiLambdaPOSTbillinggEventInvokeConfig48D69FDF[22m[0m
+[2022-08-31T11:34:30.838] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::ApiGatewayV2::Route | [0m[1mApiRoutePOSTbillingg75AD5CDD[22m[0m
+[2022-08-31T11:34:30.839] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:31.429] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:31.430] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:36.431] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:36.432] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:37.331] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::Lambda::EventInvokeConfig | [32m[1mApiLambdaPOSTbillinggEventInvokeConfig48D69FDF[22m[39m
+[2022-08-31T11:34:37.331] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::ApiGatewayV2::Route | [32m[1mApiRoutePOSTbillingg75AD5CDD[22m[39m
+[2022-08-31T11:34:37.332] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::ApiGatewayV2::Integration | [0m[1mApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC[22m[0m
+[2022-08-31T11:34:37.333] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::ApiGatewayV2::Integration | [32m[1mApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC[22m[39m
+[2022-08-31T11:34:37.333] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:38.018] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:38.019] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:43.022] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:43.023] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:44.719] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::Lambda::Permission | [32m[1mApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47[22m[39m
+[2022-08-31T11:34:44.720] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::Lambda::Function | [0m[1mApiLambdaPOSTbillingg62B8EB1C[22m[0m
+[2022-08-31T11:34:44.721] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:45.371] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-1f63571a-3290-4319-ace3-fc329681f527","timestamp":"2022-08-31T15:34:37.574Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-3b5cd7b3-3aa8-478d-a929-86f269afce38","timestamp":"2022-08-31T15:34:38.376Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:45.372] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-1f63571a-3290-4319-ace3-fc329681f527","timestamp":"2022-08-31T15:34:37.574Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-3b5cd7b3-3aa8-478d-a929-86f269afce38","timestamp":"2022-08-31T15:34:38.376Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:50.375] [TRACE] default - Initial stack states: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"deploying","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-1f63571a-3290-4319-ace3-fc329681f527","timestamp":"2022-08-31T15:34:37.574Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-3b5cd7b3-3aa8-478d-a929-86f269afce38","timestamp":"2022-08-31T15:34:38.376Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z"},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:50.376] [DEBUG] default - Fetching stack events mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:51.309] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::Lambda::Function | [32m[1mApiLambdaPOSTbillingg62B8EB1C[22m[39m
+[2022-08-31T11:34:51.309] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::IAM::Policy | [0m[1mApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95[22m[0m
+[2022-08-31T11:34:51.310] [INFO] default - mvalenzuela-notes-ApiStack | [32mDELETE_COMPLETE[39m | AWS::IAM::Policy | [32m[1mApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95[22m[39m
+[2022-08-31T11:34:51.311] [INFO] default - mvalenzuela-notes-ApiStack | [0mDELETE_IN_PROGRESS[0m | AWS::IAM::Role | [0m[1mApiLambdaPOSTbillinggServiceRoleD8530C34[22m[0m
+[2022-08-31T11:34:51.311] [DEBUG] default - Checking stack status mvalenzuela-notes-ApiStack
+[2022-08-31T11:34:51.877] [INFO] default - [32m[39m
+[32m ✅  mvalenzuela-notes-ApiStack[39m
 [32m[39m
-[2022-08-30T11:46:42.829] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
-[2022-08-30T11:46:42.829] [DEBUG] default - deploy stack: started mvalenzuela-notes-AuthStack
-[2022-08-30T11:46:42.829] [DEBUG] default - deploy stack: get pre-deploy status
-[2022-08-30T11:46:43.497] [DEBUG] default - deploy stack: get pre-deploy status: {
+[2022-08-31T11:34:51.878] [TRACE] default - After update deploy statuses: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"succeeded","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"endedAt":1661960091877,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-1f63571a-3290-4319-ace3-fc329681f527","timestamp":"2022-08-31T15:34:37.574Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-3b5cd7b3-3aa8-478d-a929-86f269afce38","timestamp":"2022-08-31T15:34:38.376Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-06bd1e08-a42e-4f3d-93d6-43ee0dfe08d4","timestamp":"2022-08-31T15:34:46.249Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95-3e7a716e-6e03-4efe-a10f-5e57c1ff2d59","timestamp":"2022-08-31T15:34:47.449Z","resourceType":"AWS::IAM::Policy","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95-77fce4fb-7d4b-407f-969e-2a6e4d8e3059","timestamp":"2022-08-31T15:34:48.218Z","resourceType":"AWS::IAM::Policy","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleD8530C34-c89ae9e0-3cb9-4a1a-95dc-3e26e600e453","timestamp":"2022-08-31T15:34:49.091Z","resourceType":"AWS::IAM::Role","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleD8530C34"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z","outputs":{"ApiEndpoint":"https://zms3re9z32.execute-api.us-east-1.amazonaws.com","ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"},"exports":{"mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"}},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"pending","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"region":"us-east-1","events":[]}]
+[2022-08-31T11:34:51.879] [DEBUG] default - deploy stack: started mvalenzuela-notes-AuthStack
+[2022-08-31T11:34:51.880] [DEBUG] default - deploy stack: get pre-deploy status
+[2022-08-31T11:34:52.491] [DEBUG] default - deploy stack: get pre-deploy status: {
   StackStatus: 'CREATE_COMPLETE',
   LastUpdatedTime: 2022-08-30T15:06:52.802Z
 }
-[2022-08-30T11:46:43.498] [DEBUG] default - deploy stack: addInUseExports
-[2022-08-30T11:46:43.501] [DEBUG] default - deploy stack: isTemplateChanged
-[2022-08-30T11:46:44.068] [DEBUG] default - Resources:
+[2022-08-31T11:34:52.492] [DEBUG] default - deploy stack: addInUseExports
+[2022-08-31T11:34:52.496] [DEBUG] default - deploy stack: isTemplateChanged
+[2022-08-31T11:34:53.084] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -4204,7 +4890,7 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:44.068] [DEBUG] default - Resources:
+[2022-08-31T11:34:53.085] [DEBUG] default - Resources:
   MetadataUploaderFunctionServiceRoleA1374F8D:
     Type: AWS::IAM::Role
     Properties:
@@ -4523,8 +5209,8 @@ Rules:
           CDK bootstrap stack version 6 required. Please run 'cdk bootstrap'
           with a recent version of the CDK CLI.
 
-[2022-08-30T11:46:44.070] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
-[2022-08-30T11:46:44.071] [DEBUG] default - deploy stack: done mvalenzuela-notes-AuthStack {
+[2022-08-31T11:34:53.086] [DEBUG] default - deploy stack: isTemplateChanged: unchanged
+[2022-08-31T11:34:53.087] [DEBUG] default - deploy stack: done mvalenzuela-notes-AuthStack {
   status: 'unchanged',
   statusReason: undefined,
   account: '626192391851',
@@ -4536,29 +5222,92 @@ Rules:
   },
   exports: {}
 }
-[2022-08-30T11:46:44.072] [INFO] default - [32m[39m
+[2022-08-31T11:34:53.087] [INFO] default - [32m[39m
 [32m ✅  mvalenzuela-notes-AuthStack (no changes)[39m
 [32m[39m
-[2022-08-30T11:46:44.072] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
-[2022-08-30T11:46:44.074] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661874400929,"endedAt":1661874400929,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"unchanged","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661874402828,"endedAt":1661874402828,"events":[],"outputs":{"ApiEndpoint":"https://zms3re9z32.execute-api.us-east-1.amazonaws.com","ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"},"exports":{"mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"}},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"unchanged","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661874404072,"endedAt":1661874404072,"events":[],"outputs":{"UserPoolClientId":"1uc0ql7ei8geiqb5spphfb2mc7","UserPoolId":"us-east-1_VfU47OemD","Region":"us-east-1","IdentityPoolId":"us-east-1:2ab96f2a-8520-4ae5-9cd7-a3d2133a77e7"},"exports":{}}]
-[2022-08-30T11:46:44.074] [INFO] default - 
-[2022-08-30T11:46:44.075] [INFO] default - ==========================
-[2022-08-30T11:46:44.076] [INFO] default -  Starting Live Lambda Dev
-[2022-08-30T11:46:44.077] [INFO] default - ==========================
-[2022-08-30T11:46:44.077] [INFO] default - 
-[2022-08-30T11:46:44.095] [DEBUG] websocket - startWebSocketClient wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
-[2022-08-30T11:46:44.098] [DEBUG] default - Checking port 12557 on host 0.0.0.0
-[2022-08-30T11:46:44.116] [DEBUG] default - Checking port 13557 on host 0.0.0.0
-[2022-08-30T11:46:44.130] [DEBUG] runtime - Starting runtime server on port: 12557
-[2022-08-30T11:46:45.094] [DEBUG] websocket - WebSocket connection opened
-[2022-08-30T11:46:46.472] [INFO] client - Debug session started. Listening for requests...
-[2022-08-30T11:46:46.473] [DEBUG] client - Client connection id: XryTyc4_oAMCKaw=
-[2022-08-30T11:52:36.094] [DEBUG] default - File changed:  [
-  '/Users/mvalenzuela/Documents/SST/notes/services/functions/update.ts'
-]
-[2022-08-30T13:46:44.690] [DEBUG] websocket - Websocket connection closed { code: 1001, reason: <Buffer 47 6f 69 6e 67 20 61 77 61 79> }
-[2022-08-30T13:46:44.693] [DEBUG] websocket - Reconnecting to websocket server...
-[2022-08-30T13:46:44.694] [DEBUG] websocket - startWebSocketClient wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
-[2022-08-30T13:46:45.734] [DEBUG] websocket - WebSocket connection opened
-[2022-08-30T13:46:45.999] [INFO] client - Debug session started. Listening for requests...
-[2022-08-30T13:46:46.000] [DEBUG] client - Client connection id: XsD44cx9IAMCEZA=
+[2022-08-31T11:34:53.087] [DEBUG] default - At least 1 stack successfully deployed, call deployStacks() again
+[2022-08-31T11:34:53.088] [TRACE] default - After deploy stacks: [{"id":"mvalenzuela-notes-StorageStack","name":"mvalenzuela-notes-StorageStack","status":"unchanged","dependencies":[],"account":"626192391851","region":"us-east-1","startedAt":1661960004821,"endedAt":1661960004821,"events":[],"outputs":{"ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"},"exports":{"mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttNotesTable7100B0E8Arn5DD5BF38":"arn:aws:dynamodb:us-east-1:626192391851:table/mvalenzuela-notes-Notes","mvalenzuela-notes-StorageStack:ExportsOutputFnGetAttUploadsBucketC4B27CC7Arn515ECA45":"arn:aws:s3:::mvalenzuela-notes-storagest-uploadsbucketc4b27cc7-pt4qbqqeyje1","mvalenzuela-notes-StorageStack:ExportsOutputRefNotesTable7100B0E8C879CB95":"mvalenzuela-notes-Notes"}},{"id":"mvalenzuela-notes-ApiStack","name":"mvalenzuela-notes-ApiStack","status":"succeeded","dependencies":["mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960047704,"endedAt":1661960091877,"events":[{"eventId":"59590520-2942-11ed-95d2-0e3807434699","timestamp":"2022-08-31T15:34:06.162Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_IN_PROGRESS","resourceStatusReason":"User Initiated","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"MetadataUploader-UPDATE_IN_PROGRESS-2022-08-31T15:34:17.879Z","timestamp":"2022-08-31T15:34:17.879Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_IN_PROGRESS","logicalResourceId":"MetadataUploader"},{"eventId":"MetadataUploader-UPDATE_COMPLETE-2022-08-31T15:34:20.887Z","timestamp":"2022-08-31T15:34:20.887Z","resourceType":"Custom::StackMetadata","resourceStatus":"UPDATE_COMPLETE","logicalResourceId":"MetadataUploader"},{"eventId":"6490e070-2942-11ed-9d39-0a36ea6f376b","timestamp":"2022-08-31T15:34:25.010Z","resourceType":"AWS::CloudFormation::Stack","resourceStatus":"UPDATE_COMPLETE_CLEANUP_IN_PROGRESS","logicalResourceId":"mvalenzuela-notes-ApiStack"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-01877009-7a79-47eb-ba36-f8d12a6cf80e","timestamp":"2022-08-31T15:34:26.735Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-2a390514-f391-477a-b5f5-ca1cac66a684","timestamp":"2022-08-31T15:34:27.007Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-25a9080b-631e-481b-aa3f-9f1e53c9784c","timestamp":"2022-08-31T15:34:27.085Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF-184ed92b-b6c6-4932-9418-aeb213ae1074","timestamp":"2022-08-31T15:34:28.587Z","resourceType":"AWS::Lambda::EventInvokeConfig","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggEventInvokeConfig48D69FDF"},{"eventId":"ApiRoutePOSTbillingg75AD5CDD-c79e29c4-fbcb-4fd9-9d3d-a1fcfdcfc98d","timestamp":"2022-08-31T15:34:28.706Z","resourceType":"AWS::ApiGatewayV2::Route","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillingg75AD5CDD"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6e8719fa-7e48-4324-bc23-96cead0ffa08","timestamp":"2022-08-31T15:34:30.319Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC-6d414435-379a-48a0-8b3a-7e9dc49f7c98","timestamp":"2022-08-31T15:34:31.688Z","resourceType":"AWS::ApiGatewayV2::Integration","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggE4A99BFC"},{"eventId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47-1f63571a-3290-4319-ace3-fc329681f527","timestamp":"2022-08-31T15:34:37.574Z","resourceType":"AWS::Lambda::Permission","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiRoutePOSTbillinggIntegrationPOSTbillinggPermission69AF6E47"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-3b5cd7b3-3aa8-478d-a929-86f269afce38","timestamp":"2022-08-31T15:34:38.376Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"},{"eventId":"ApiLambdaPOSTbillingg62B8EB1C-06bd1e08-a42e-4f3d-93d6-43ee0dfe08d4","timestamp":"2022-08-31T15:34:46.249Z","resourceType":"AWS::Lambda::Function","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillingg62B8EB1C"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95-3e7a716e-6e03-4efe-a10f-5e57c1ff2d59","timestamp":"2022-08-31T15:34:47.449Z","resourceType":"AWS::IAM::Policy","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95-77fce4fb-7d4b-407f-969e-2a6e4d8e3059","timestamp":"2022-08-31T15:34:48.218Z","resourceType":"AWS::IAM::Policy","resourceStatus":"DELETE_COMPLETE","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleDefaultPolicy3A457A95"},{"eventId":"ApiLambdaPOSTbillinggServiceRoleD8530C34-c89ae9e0-3cb9-4a1a-95dc-3e26e600e453","timestamp":"2022-08-31T15:34:49.091Z","resourceType":"AWS::IAM::Role","resourceStatus":"DELETE_IN_PROGRESS","logicalResourceId":"ApiLambdaPOSTbillinggServiceRoleD8530C34"}],"eventsFirstEventAt":"2022-08-31T15:34:01.162Z","outputs":{"ApiEndpoint":"https://zms3re9z32.execute-api.us-east-1.amazonaws.com","ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"},"exports":{"mvalenzuela-notes-ApiStack:ExportsOutputRefApiCD79AAA0A1504A18":"zms3re9z32"}},{"id":"mvalenzuela-notes-AuthStack","name":"mvalenzuela-notes-AuthStack","status":"unchanged","dependencies":["mvalenzuela-notes-ApiStack","mvalenzuela-notes-StorageStack"],"account":"626192391851","region":"us-east-1","startedAt":1661960093087,"endedAt":1661960093087,"events":[],"outputs":{"UserPoolClientId":"1uc0ql7ei8geiqb5spphfb2mc7","UserPoolId":"us-east-1_VfU47OemD","Region":"us-east-1","IdentityPoolId":"us-east-1:2ab96f2a-8520-4ae5-9cd7-a3d2133a77e7"},"exports":{}}]
+[2022-08-31T11:34:53.089] [INFO] default - 
+[2022-08-31T11:34:53.090] [INFO] default - ==========================
+[2022-08-31T11:34:53.090] [INFO] default -  Starting Live Lambda Dev
+[2022-08-31T11:34:53.091] [INFO] default - ==========================
+[2022-08-31T11:34:53.091] [INFO] default - 
+[2022-08-31T11:34:53.109] [DEBUG] websocket - startWebSocketClient wss://8i9tfnx0hg.execute-api.us-east-1.amazonaws.com/mvalenzuela mvalenzuela-notes-debug-stack-bucket83908e77-5qiucfjhvsu5
+[2022-08-31T11:34:53.112] [DEBUG] default - Checking port 12557 on host 0.0.0.0
+[2022-08-31T11:34:53.128] [DEBUG] default - Checking port 13557 on host 0.0.0.0
+[2022-08-31T11:34:53.145] [DEBUG] runtime - Starting runtime server on port: 12557
+[2022-08-31T11:34:54.058] [DEBUG] websocket - WebSocket connection opened
+[2022-08-31T11:34:55.412] [INFO] client - Debug session started. Listening for requests...
+[2022-08-31T11:34:55.413] [DEBUG] client - Client connection id: XvDgse4NIAMCENQ=
+[2022-08-31T11:46:13.650] [INFO] client - [90m8cd84d1c-8041-4908-91bb-e4a0064144de REQUEST mvalenzuela-notes-ApiStac-ApiLambdaPOSTnotes3B067E-HraRcCgaG00G [functions/create.main] invoked by API POST /notes[39m
+[2022-08-31T11:46:13.658] [DEBUG] client - Invoking local function...
+[2022-08-31T11:46:13.659] [DEBUG] runtime - Triggering {
+  id: 'mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes',
+  handler: 'functions/create.main',
+  runtime: 'nodejs16.x',
+  srcPath: 'services',
+  bundle: { format: 'esm' },
+  root: '/Users/mvalenzuela/Documents/SST/notes'
+}
+[2022-08-31T11:46:13.660] [DEBUG] runtime - First build...
+[2022-08-31T11:46:14.739] [DEBUG] runtime - First build finished
+[2022-08-31T11:46:14.741] [DEBUG] runtime - Spawning {
+  command: '/usr/local/bin/node',
+  args: [
+    '/Users/mvalenzuela/Documents/SST/notes/node_modules/@serverless-stack/aws-lambda-ric/bin/index.js',
+    '/Users/mvalenzuela/Documents/SST/notes/.sst/artifacts/mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes/services/functions/create.main'
+  ],
+  env: { AWS_LAMBDA_NODEJS_USE_ALTERNATIVE_CLIENT_1: 'true' }
+}
+[2022-08-31T11:46:15.252] [DEBUG] runtime - Worker waiting for function mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes
+[2022-08-31T11:46:15.253] [DEBUG] runtime - Sending next payload 8cd84d1c-8041-4908-91bb-e4a0064144de mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes {
+  version: '2.0',
+  routeKey: 'POST /notes',
+  rawPath: '/notes',
+  rawQueryString: '',
+  headers: {
+    accept: 'application/json',
+    authorization: 'AWS4-HMAC-SHA256 Credential=ASIAZDS7ZT2V5LXLTCEK/20220831/us-east-1/execute-api/aws4_request, SignedHeaders=accept;content-type;host;x-amz-date, Signature=09c37bf9e48bc004a73e788dd1a53ca66b0ab3a421cde43924506b824edcd463',
+    'content-length': '34',
+    'content-type': 'application/json',
+    host: 'zms3re9z32.execute-api.us-east-1.amazonaws.com',
+    'user-agent': 'axios/0.18.1',
+    'x-amz-date': '20220831T154611Z',
+    'x-amz-security-token': 'IQoJb3JpZ2luX2VjENj//////////wEaCXVzLWVhc3QtMSJHMEUCICf6fJ0TR8nm8UFYIFC5haCjUUhNhigXfxRnUWe3rRyNAiEAn38qcrIgnlYJsUhaQZr5k6V/K39aqLYuz0HqtHv+kgkqxAQIYRAAGgw2MjYxOTIzOTE4NTEiDAkkN0fCRBlHku40qCqhBKcoFh53dCgFeG4g++FMCIXys97mW6gDglxXt8+QqP/km1xQGf1c1x/aHN/ro3XwoSCly3ETQBq1e3v6mR/7XFn6d6/0ig24w5NOOr//N+Isn+/3434eomMer/QySk9vYjCkt9Fo3zkB88Nrj0a1C3/a+bNBCaBL0vwVRixen/KQE6PWe9nyOo2WhFbyD77adCbDMJkfGvrnXOwtPoX9Ht+stPCvjcvAJlAfVhTrg5+7LrQ8baup158cwlQx1rS3GQjBS9sxlFR6OWuJlPnPBqBehrbYGNiydZ59ntN4tQJ3B4rgqeDNa3AmtxPqzeTpY0Q9j0JXARKM7fD/saKoeHKaQ8vb3kUz42rJMnP7tjnXjmX4bT7SEU39VmebdLfBe5wUi2OmSzqAtThIdX+1LBB+r9Zy1GqldaG6kN+6ga4Gec9l7sLgFDHgC9A/Lc6jqblI+JQ5UuGXhJEK3nX1tLJatUi4OUoX3yxFjVAXRTK5oWTF566lxB2Hycl1WJutkw7xot2MrJjJslQ7m32Au2TXkCMuy2U6TaU7/V7QaF5xQEyro/LpbrslxtsFmGjH7TaYjN9Tz4tN7yeSnFGhc+EuAOELQaJfTtJn2BeP/ZH0s81EQConcPUGQzulno8GsaMxiD/AqLF6tyTlxtrmIa6Ob8tzDavFIM3pXU4GvvqycA3/yLXyaBKRIoP1q3ymLgvi+jet1/W6JC2U9nBrFg+XMMOEvpgGOoUCsN0Uw/gl0OvkWsa4FjXKqTWY24/TbxSAS/33DyFexe0yDVQlSER16fWrZ1UcEIg+Cgsd92156FghAKXFTygJ2TDnXm6ZGeVXBTEq+hQrWQv4Da7G37CcAZn/XBJ/bVmRor8eGFTDlrLABykNF5QU3FjgFyyJbxsg/qd/5SgvjmD/UPhZPTtA5RrDpR99YD6tM8g1eWczyg6PbcYAl6AZuTmiDjXtCsE4VNb4oeTEEWxI/gEsgttkBW0aBMmY7KZPgi7cHHH90VNxEYjBNmsvey7hyAVne8OTWjjYrnaqUbyXscSVfq+2Jxt30cmfspjim6oJCTZbUckwjLE2L2naToV0FYo3',
+    'x-amzn-trace-id': 'Root=1-630f8244-30a271c26d85df457f24dc55',
+    'x-forwarded-for': '201.188.113.171',
+    'x-forwarded-port': '443',
+    'x-forwarded-proto': 'https'
+  },
+  requestContext: {
+    accountId: '626192391851',
+    apiId: 'zms3re9z32',
+    authorizer: { iam: [Object] },
+    domainName: 'zms3re9z32.execute-api.us-east-1.amazonaws.com',
+    domainPrefix: 'zms3re9z32',
+    http: {
+      method: 'POST',
+      path: '/notes',
+      protocol: 'HTTP/1.1',
+      sourceIp: '201.188.113.171',
+      userAgent: 'axios/0.18.1'
+    },
+    requestId: 'XvFKtjavoAMEPJA=',
+    routeKey: 'POST /notes',
+    stage: '$default',
+    time: '31/Aug/2022:15:46:12 +0000',
+    timeEpoch: 1661960772344
+  },
+  body: '{"source":"tok_visa","storage":21}',
+  isBase64Encoded: false
+}
+[2022-08-31T11:46:16.081] [DEBUG] runtime - Received response for 8cd84d1c-8041-4908-91bb-e4a0064144de mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes
+[2022-08-31T11:46:16.083] [DEBUG] client - Response {
+  type: 'success',
+  data: {
+    statusCode: 200,
+    body: '{"userId":"us-east-1:fb27800b-c96f-47ee-971a-7539d5c208b9","noteId":"0be7f7e0-2944-11ed-a838-49b011470da3","createdAt":1661960775262}'
+  }
+}
+[2022-08-31T11:46:16.084] [INFO] client - [90m8cd84d1c-8041-4908-91bb-e4a0064144de RESPONSE {"statusCode":200,"body":"{\"userId\":\"us-east-1:fb27800b-c96f-47ee-971a-7539d5c208b9\",\"noteId\":\"0be7f7e0-2944-11ed-a838-49b0114... 33 more characters"}[39m
+[2022-08-31T11:46:16.086] [DEBUG] runtime - Worker waiting for function mvalenzuela-notes-ApiStack-Api-Lambda_POST_-notes

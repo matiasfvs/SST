@@ -31,7 +31,8 @@ function ApiStack({ stack, app }) {
       function: {
         permissions: [table],
         environment: {
-          TABLE_NAME: table.tableName
+          TABLE_NAME: table.tableName,
+          STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY
         }
       }
     },
@@ -40,7 +41,8 @@ function ApiStack({ stack, app }) {
       "GET /notes/{id}": "functions/get.main",
       "GET /notes": "functions/list.main",
       "PUT /notes/{id}": "functions/update.main",
-      "DELETE /notes/{id}": "functions/delete.main"
+      "DELETE /notes/{id}": "functions/delete.main",
+      "POST /billing": "functions/billing.main"
     }
   });
   stack.addOutputs({

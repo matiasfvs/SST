@@ -1,6 +1,8 @@
 import { Api, use } from "@serverless-stack/resources";
 import { StorageStack } from "./StorageStack";
 
+
+
 export function ApiStack({ stack, app }:any) {
   const { table } = use(StorageStack);
 
@@ -12,6 +14,7 @@ export function ApiStack({ stack, app }:any) {
         permissions: [table],
         environment: {
           TABLE_NAME: table.tableName,
+          STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
         },
       },
     },
@@ -21,6 +24,8 @@ export function ApiStack({ stack, app }:any) {
       "GET /notes": "functions/list.main",
       "PUT /notes/{id}": "functions/update.main",
       "DELETE /notes/{id}": "functions/delete.main",
+      "POST /billing": "functions/billing.main",
+
     },
   });
 
